@@ -1,0 +1,1 @@
+"""Translation of vision events into system actions."""

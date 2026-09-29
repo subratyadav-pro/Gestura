@@ -1,0 +1,1 @@
+"""Interaction mode selection and state."""

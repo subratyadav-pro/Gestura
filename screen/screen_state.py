@@ -1,0 +1,1 @@
+"""Smart-screen state management."""

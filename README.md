@@ -111,17 +111,21 @@ Open Palm     → Stop
 ```text
 Gestura/
 │
-├── main.py
-├── requirements.txt
-├── README.md
+├── launcher/
+│   ├── startup.py
+│   ├── startup_ui.py
+│   ├── tray.py
+│   └── launcher_state.py
 │
-├── config/
-│   ├── settings.yaml
-│   └── gestures.yaml
+├── app/
+│   ├── application.py
+│   ├── lifecycle.py
+│   └── module_loader.py
 │
 ├── core/
 │   ├── camera.py
 │   ├── frame_processor.py
+│   ├── vision_engine.py
 │   └── state_manager.py
 │
 ├── hand/
@@ -151,15 +155,39 @@ Gestura/
 ├── interaction/
 │   ├── command_engine.py
 │   ├── action_executor.py
-│   └── input_controller.py
+│   ├── input_controller.py
+│   └── mode_manager.py
 │
 ├── ui/
 │   ├── dashboard.py
-│   └── overlay.py
+│   ├── overlay.py
+│   ├── calibration_ui.py
+│   └── status_panel.py
 │
-└── utils/
-    ├── logger.py
-    └── geometry.py
+├── config/
+│   ├── settings.yaml
+│   └── gestures.yaml
+│
+├── utils/
+│   ├── geometry.py
+│   ├── logger.py
+│   ├── fps.py
+│   └── system.py
+│
+├── tests/
+│   ├── test_camera.py
+│   ├── test_gestures.py
+│   ├── test_gaze.py
+│   ├── test_smoothing.py
+│   └── test_commands.py
+│
+├── data/
+│   ├── calibration/
+│   │   └── gaze_calibration.json
+│   └── logs/
+│
+├── main.py
+└── requirements.txt
 ```
 
 ---

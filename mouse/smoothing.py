@@ -1,0 +1,1 @@
+"""Filtering and smoothing for cursor movement."""

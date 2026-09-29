@@ -1,0 +1,1 @@
+"""Application lifecycle and module loading."""

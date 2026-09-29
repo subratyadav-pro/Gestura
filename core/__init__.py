@@ -1,0 +1,1 @@
+"""Shared camera, vision, and state infrastructure."""
